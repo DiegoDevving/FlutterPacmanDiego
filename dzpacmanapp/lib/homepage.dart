@@ -1,5 +1,6 @@
 import 'package:dzpacmanapp/path.dart';
 import 'package:dzpacmanapp/pixel.dart';
+import 'package:dzpacmanapp/player.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -12,6 +13,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   static int numberInRow = 11;
   int numberOfSquares = numberInRow * 17;
+  int player = numberInRow * 15 + 1;
 
   List<int> barriers = [
     0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
@@ -48,7 +50,11 @@ class _HomePageState extends State<HomePage> {
                   crossAxisCount: numberInRow,
                 ),
                 itemBuilder: (BuildContext context, int index) {
-                  if (barriers.contains(index)) {
+                  if (player == index) {
+                    return MyPlayer(
+
+                    );
+                  }else if (barriers.contains(index)) {
                     return MyPixel(
                       innerColor: Colors.blue[800], // Choose the color you want for barriers
                       outerColor: Colors.blue[900],
