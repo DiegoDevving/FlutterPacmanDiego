@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class MyPath extends StatelessWidget {
-
   final innerColor;
   final outerColor;
   final child;

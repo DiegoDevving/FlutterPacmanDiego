@@ -59,7 +59,11 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets: 
-  - lib/pacmanimages/
+  - lib/pacmanimages/pacman.png
+  - lib/pacmanimages/pacman1.jpg
+  - lib/pacmanimages/pacmanghost.png
+  - lib/pacmanimages/pacman1nb.png
+  - lib/pacmanimages/pacmanghostnb.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
